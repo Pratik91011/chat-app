@@ -3,7 +3,7 @@ import { Redirect, Route } from 'react-router';
 
 const PrivateRoute = ({children, ...routeProps}) => {
 
-  const profile = true;
+  const profile = false;
 
   if(!profile)
   {
@@ -17,4 +17,4 @@ const PrivateRoute = ({children, ...routeProps}) => {
   )
 }
 
-export default PrivateRoute
+export default PrivateRoute;
