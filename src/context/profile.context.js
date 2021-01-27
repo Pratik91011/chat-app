@@ -5,7 +5,7 @@ const ProfileContext = createContext();
 
 export const ProfileProvider=({children})=>{
     const [profile, setProfile]=useState(null);
-    const [isLodaing, setIsLoading]= useState(true);
+    const [isLoading, setIsLoading]= useState(true);
     useEffect(()=>{
       let userRef;
       const authUnsub=auth.onAuthStateChanged(authObj=>{
@@ -50,7 +50,7 @@ export const ProfileProvider=({children})=>{
     },[]);
   
     return(
-      <ProfileContext.Provider value={{isLodaing,profile}}>
+      <ProfileContext.Provider value={{isLoading,profile}}>
         {children}
       </ProfileContext.Provider>
     )
