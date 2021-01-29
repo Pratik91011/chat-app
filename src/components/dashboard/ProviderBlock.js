@@ -23,7 +23,7 @@ const ProviderBlock = () => {
 
   const unlink=async(providerId)=>{
     try {
-      if(auth.currentUser.providerData === 1)
+      if(auth.currentUser.providerData.length === 1)
       {
         throw new Error(`You cannot disconnect from ${providerId}`)
       }

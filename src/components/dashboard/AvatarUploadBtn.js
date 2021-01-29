@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import AvatarEditor from 'react-avatar-editor';
-
 import { Alert, Button, Modal } from 'rsuite';
 import { useModalState } from '../../misc/custom-hooks';
 
