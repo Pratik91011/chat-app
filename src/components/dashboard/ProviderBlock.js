@@ -58,7 +58,7 @@ const ProviderBlock = () => {
   };
 
   return (
-    <div>
+    <div style={{ 'font-family': 'sans-serif' }}>
       {
         isConnected['google.com'] && (
           <Tag color="red" closable onClose={unlinkGoogle}>
