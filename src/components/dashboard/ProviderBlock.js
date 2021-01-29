@@ -62,7 +62,7 @@ const ProviderBlock = () => {
       {
         isConnected['google.com'] && (
           <Tag color="red" closable onClose={unlinkGoogle}>
-          <Icon icon="google"> connected </Icon>
+          <Icon icon="google"> Connected </Icon>
         </Tag> 
         )
       }
